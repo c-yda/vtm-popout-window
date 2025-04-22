@@ -1,0 +1,27 @@
+/* styles.css */
+.notes-popout-button {
+  position: absolute; /* Ensure positioning context works */
+  bottom: 5px;
+  left: 5px;
+  z-index: 999; /* Keep it above other content inside the relative parent */
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #007bff; /* Example blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.notes-popout-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Add styles for the content inside the popup if needed */
+/* These would need to be included in the Data URI's <style> tag in content.js */
+/* Example: */
+/* body .mat-tab-group { */
+  /* Styles to apply specifically within the popup */
+/* } */
